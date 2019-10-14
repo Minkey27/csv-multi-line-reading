@@ -13,31 +13,22 @@ if (($handle = fopen("multiline.csv", "r")) !== FALSE) {
 }
 
 /*
-$ php csv_reader.php
+php php/csv_reader.php
+column1;column2;column3;
+--------NEW_ROW----------
+1;Multi line
+text
+field;last value;
+--------NEW_ROW----------
+2;Multi line
+text
+field;last value;
+--------NEW_ROW----------
+3;Multi line
+text
+field;last value;
+--------NEW_ROW----------
 
-column1<br />
-column2<br />
-column3<br />
-------------------
- NEW ROW 1<br />
-Multi line
-text
-field<br />
-last value<br />
-------------------
- NEW ROW 2<br />
-Multi line
-text
-field<br />
-last value<br />
-------------------
- NEW ROW 3<br />
-Multi line
-text
-field<br />
-last value<br />
-------------------
- NEW ROW
 
 */
 ?>
