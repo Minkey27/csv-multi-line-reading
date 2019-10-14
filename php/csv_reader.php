@@ -2,12 +2,12 @@
 $row = 1;
 if (($handle = fopen("multiline.csv", "r")) !== FALSE) {
   while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
-    $num = count($data);
     $row++;
-    for ($c=0; $c < $num; $c++) {
-        echo $data[$c] . "<br />\n";
+    foreach ($data as $key => $val) {
+       echo $val;
+       echo ";";
     }
-    echo "------------------" . PHP_EOL . " NEW ROW ";
+    echo PHP_EOL ."--------NEW_ROW----------" . PHP_EOL;
   }
   fclose($handle);
 }
